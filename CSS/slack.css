@@ -1,0 +1,511 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=PT+Serif700|PT+Serif:100,300,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+
+/* RESET DE ESTILOS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*RESET DE ESTILOS*/
+
+/*WEB*/
+
+* {
+	box-sizing: border-box;
+	font-family: Quicksand, Open Sans, sans-serif;
+}
+
+h1 {
+	font-size: 3em;
+	font-family: PT Serif;
+	font-weight: 500;
+	margin: auto auto  0.25em;
+}
+
+h2 {
+	font-size: 2em;
+	font-family: PT Serif;
+	font-weight: 500;
+	margin: auto auto  0.25em;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-family: PT Serif;
+	font-weight: 500;
+	margin: auto auto  0.25em;
+}
+
+h4 {
+	font-family: Quicksand, Open Sans, sans-serif;
+	color: black;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1.5em;
+	margin: 1.5em auto 1em;
+}
+
+h5 {
+	font-family: Quicksand, Open Sans, sans-serif;
+	color: darkslategrey;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1.5em;
+	margin: 0.25em auto;
+}
+
+h6 {
+	font-family: Quicksand, Open Sans, sans-serif;
+	color: darkslategrey;
+	font-size: 1.25em;
+	line-height: 1.5em;
+}
+
+p {
+	font-family: Quicksand, Open Sans, sans-serif;
+	color: darkslategrey;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.float {
+	float: left;
+}
+
+.clearfix { 
+  clear: both; 
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.navigator {
+	margin: 10px 3% auto 6%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.logo-slack {
+	height: 50px;
+	margin: auto auto auto -10px;
+
+}
+
+.menu {
+	margin: auto -15px auto -15px;
+	height: 40px;
+}
+
+.header {
+	margin: 3em auto auto;
+}
+
+
+.btn-download {
+	background-color: #3f46ad;
+	color: white;
+	width: 100%;
+	font-family: Quicksand;
+	font-size: 0.9em;
+	font-weight: 700;
+  letter-spacing: 0.5px;
+	text-align: center;
+	text-transform: uppercase;
+  text-decoration: none;
+  margin: 40px auto 0 auto;
+	padding: 20px 50px;
+	border-radius: 5px;
+	max-width: 600px;
+}
+
+.btn-download:hover {
+	background-color: #1721ac;
+}
+
+.big-image {
+	width: 60%;
+	margin: 1.5em 20% auto;
+c}
+
+.guia-slack {
+	margin: 2.5em auto auto;
+}
+
+.guia-slack img {
+	margin: 1em auto;
+}
+
+.guia-slack p {
+	margin: auto auto 2em;
+}
+
+.padre-guia-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.hijo-guia-flex {
+	margin: 10px 2%;
+}
+
+@media (min-width: 768px) {
+	.padre-guia-flex {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.hijo-guia-flex {
+		width: 46%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.padre-guia-flex {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	
+	.hijo-guia-flex {
+		width: 23%;
+		margin: 10px 1%;
+	}
+}
+
+
+.link-final-guia {
+	font-family: Quicksand, Open Sans, sans-serif;
+	color: #3f46ad;
+	font-size: 1em;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	line-height: 1.5em;
+	margin: auto auto 3em
+}
+.equipo {
+	margin: 2em auto auto;
+	background-color: #f5f5f5;
+	border-top: 1px solid #ebebeb;
+	padding: 3em 0;
+}
+
+.equipo p {
+	margin: 1em auto 3em;
+}
+
+
+.equipo-btn {
+	align-content: center;
+}
+
+.equipo-btn a {
+	display: block;
+	text-decoration: none;
+	background-color: white;
+	font-family: Quicksand, Open Sans, sans-serif;
+	color: black;
+	font-size: 1.2em;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 1.5em;
+	margin: auto auto 3em;
+	padding: 2em 0;
+	margin: 0.5em auto;
+	align-items: center;
+	justify-content: center;
+	text-transform: none;
+}
+
+.equipo-btn a:hover { 
+	background-color:#3f46ad;
+	color: white;
+}
+
+.padre-equipo {
+	display: flex;
+	flex-direction: column;
+}
+
+.hijo-equipo {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.padre-equipo {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.hijo-equipo {
+		width: 48%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.padre-equipo {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.hijo-equipo {
+		width: 30%;
+	}
+}
+
+.companies {
+	margin: 4em auto 3em;
+	text-align: center;
+}
+
+.companies p {
+	text-align: center;
+	margin-top: 1.5em;
+	justify-content: center;
+}
+
+.article {
+	display: block;
+	box-sizing: border-box;
+	box-align: center;
+	background-color: white;
+	box-shadow:  3px 6px 20px 3px rgba(0, 0, 0, 0.19);
+	border: 1px solid #f5f5f5;
+	margin: 1em;
+	text-align: left;
+}
+
+.article header {
+	text-decoration: none;
+	font-family: Quicksand, Open Sans, sans-serif;
+	color: black;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1.5em;
+	margin: 1.2em 4%;
+}
+
+.article img {
+	width: 100%;
+	margin: 0 0;
+}
+
+.article h3 {
+	text-decoration: none;
+	margin: auto 4% 1.5em;
+	color: black;
+}
+
+.leer-historia {
+	display: flex;
+	flex: 0 1 auto;
+}
+
+.leer-historia:hover {
+	text-decoration: none;
+	background-color: #3f46ad;
+	color: white;
+}
+
+
+.article p {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1rem;
+	text-transform: uppercase;
+	display: block;
+	border: none;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	height: 3em;
+	text-align: left;
+}
+
+.padre-article {
+	display: flex;
+	flex-direction: column;
+	margin: 1.5em auto;
+}
+
+.hijo-article {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.padre-article {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.hijo-article {
+		width: 45%;
+	}
+}
+
+
+.style-none {
+	text-decoration: none;
+}
+
+.logos {
+	margin: 4em auto auto;
+}
+
+.logos img {
+	margin: 0.5em 15px;
+}
+
+.blue-prueba {
+	background-color: #3f46ad;
+	text-align: center;
+	margin: 3em auto auto;
+  padding: 6em 0;
+}
+
+.blue-prueba h2 {
+	color: white;
+	margin: auto auto 2em;
+}
+
+.button-search-link {
+	background-color:white;
+	color:#3f46ad;
+	font-family: Quicksand;
+	font-size: 0.9em;
+	font-weight: 700;
+  letter-spacing: 0.5px;
+	text-align: center;
+	text-transform: uppercase;
+  text-decoration: none;
+	padding: 20px 70px;
+	border-radius: 5px;
+}
+
+.button-search-link:hover {
+	border: 3px solid #3f46ad;
+	padding: 18px 48px;
+}
+
+.main-footer {
+	text-align: center;
+	margin: 2em auto auto;
+	background-color: #f5f5f5;
+	border-top: 1px solid #ebebeb;
+	padding: 1em 0;
+}
+
+.prefooter {
+	list-style-type: none;
+	line-height: 2em;
+}
+
+.logo-slack-footer {
+	width: 70px;
+	margin: 2em auto auto;
+}
+
+.prefooter a {
+	text-decoration: none;
+	font-family: Quicksand, Open Sans, sans-serif;
+	color: darkslategrey;
+	font-size: 1em;
+}
+
+.padre-footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.hijo-footer {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.padre-footer {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.hijo-footer {
+		width: 25%;
+	}
+}
+
+.políticas-finales {
+	list-style-type: none;
+	line-height: 2em;
+}
+
+.políticas-finales a {
+	text-decoration: none;
+	font-family: Quicksand, Open Sans, sans-serif;
+	color: darkslategrey;
+	font-size: 1em;
+	font-weight: 700;
+	overflow: auto;
+}
+
+.políticas-finales img {
+	height: 1.2em;
+	padding-top: 5px;
+}
+
+.links-footer {
+	margin: auto 0;
+}
+.links-footer img {
+	width: 5%;
+	margin: 0 auto;
+	float: left;
+	text-align: center;
+}
